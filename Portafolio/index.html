@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">PORTAFOLIO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="Imagenes/KARMA.jpg" alt="">
+        </div>
+        <h1>Gabriel CR</h1>
+        <h2>Ingeniero de Sistemas - Estudiante</h2>
+        <div class="redes">
+            <a href="https://discord.com/users/gabo" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-condori-rondo-9442502b6" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/GCR18" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Gabriel.</span>  Mi pasión por la tecnología y la innovación me ha llevado a explorar soluciones que optimicen procesos y mejoren la experiencia de usuario.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-03-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +591 71427315
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            gabriel.condori@uab.edu.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Vinto, Bolivia
+                        </li>
+                        <li>
+
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bed"></i>
+                            <span>DORMIR</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="Docs/CV.pdf" download="cv.pdf">
+                        <button>
+                            Descargar CV <i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </a>
+                </div>                
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Html & Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mysql Workbench</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Formacion Academica</h4>
+                        <span class="casa">Universidad Adventista de Bolivia</span>
+                        <span class="fecha">En Curso</span>
+                        <p>Modalidad Presencial / Ing. de Sistemas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Certificaciones</h4>
+                        <span class="casa">Tutorial SQL Interactivo</span>
+                        <span class="fecha">2024</span>
+                        <p>Modalidad Online</p>
+                        <span class="casa">CertiProf. “SFPC“ / Scrum Master</span>
+                        <span class="fecha">2024</span>
+                        <p>Modalidad Online</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Soporte Tecnico</h4>
+                        <span class="casa">Boliviana de Aviación / BoA</span>
+                        <span class="fecha">En Curso</span>
+                        <p>Durante mi pasantía en BOA, brindo soporte técnico en la instalación, mantenimiento y reparación de equipos informáticos. Tambien me encargo de la configuración de hardware y software, resolución de incidencias técnicas y optimización del rendimiento de los sistemas utilizados en la empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <a href="Docs/Proyecto 1.pdf" target="_blank">
+                    <img src="Imagenes/Proyecto1.png" alt="Proyecto 1">
+                    <div class="overlay">
+                        <h3>Proyecto 1</h3>
+                        <p>Diseño de una pagina web para una tienda online de productos</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="Docs/Proyecto 3.pdf" target="_blank">
+                    <img src="Imagenes/Config.jpeg" alt="Proyecto 2">
+                    <div class="overlay">
+                        <h3>Proyecto 2</h3>
+                        <p>Soporte Tecnico </p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="Docs/Proyecto 2.pdf" target="_blank">
+                    <img src="Imagenes/Proyecto2.png" alt="Proyecto 3">
+                    <div class="overlay">
+                        <h3>Proyecto 3</h3>
+                        <p>Diseño de una pagina para un Menu de hamburguesas </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTAME</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form action="https://formsubmit.co/gabriel.condori@uab.edu.bo" method="POST">
+                    <input type="text" name="name" placeholder="Tú Nombre" required>
+                    <input type="tel" name="phone" placeholder="Número telefónico" required>
+                    <input type="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" name="subject" placeholder="Tema">
+                    <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
