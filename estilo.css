@@ -5,11 +5,23 @@
     margin: 0;
     padding: 0;
 }
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+img, video{
+    max-width: 100%;
+    height: auto;
+}
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 body{
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
 }
 
 /* Mejoras para dispositivos táctiles */
@@ -1376,161 +1388,233 @@ footer .arriba:hover{
 @media screen and (max-width:700px){
     /* Header y logo */
     .contenedor-header header{
-        padding: 12px 15px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
     }
     .contenedor-header header .logo a{
-        font-size: 12px;
+        font-size: 10px;
         letter-spacing: 1px;
+    }
+    .contenedor-header header nav ul li a{
+        font-size: 8px;
+        padding: 6px 10px;
+        margin: 0 5px;
     }
     .nav-responsive{
         padding: 8px 12px;
+        font-size: 18px;
     }
     nav.responsive{
         width: 100%;
         right: 0;
         left: 0;
-        top: 60px;
+        top: 55px;
+        z-index: 100;
+    }
+    nav.responsive ul li a{
+        font-size: 9px;
+        padding: 10px;
     }
 
     /* Sección inicio */
     .inicio{
-        padding: 20px;
+        padding: 15px 10px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
     }
     .inicio .contenido-banner{
         max-width: 100%;
-        padding: 25px 20px;
-        margin: 20px;
+        width: calc(100% - 20px);
+        padding: 30px 15px;
+        margin: 10px auto;
     }
     .inicio .contenido-banner img{
-        width: 140px;
-        height: 140px;
+        width: 130px;
+        height: 130px;
         border: 3px solid var(--accent-gold);
     }
     .inicio .contenido-banner h1{
-        font-size: 28px;
+        font-size: 26px;
         margin-top: 20px;
+        letter-spacing: 1px;
     }
     .inicio .contenido-banner h2{
-        font-size: 12px;
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    .inicio .contenido-banner .redes{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
     }
     .inicio .contenido-banner .redes a{
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        margin: 20px 5px 10px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        margin: 15px 5px 5px;
         font-size: 18px;
     }
 
     /* Títulos de secciones */
     .sobremi h2, .skills h2, .curriculum h2, .portfolio h2, .contacto h2{
-        font-size: 20px;
-        padding: 15px 0 25px;
-        letter-spacing: 2px;
-        line-height: 1.6;
+        font-size: 18px;
+        padding: 15px 10px 25px;
+        letter-spacing: 1px;
+        line-height: 1.8;
+        word-break: break-word;
+    }
+    .sobremi h2::before, .skills h2::before, .curriculum h2::before, .portfolio h2::before, .contacto h2::before,
+    .sobremi h2::after, .skills h2::after, .curriculum h2::after, .portfolio h2::after, .contacto h2::after{
+        font-size: 14px;
     }
 
     /* Sección sobre mí */
     .sobremi{
-        padding: 60px 15px;
+        padding: 50px 10px;
+    }
+    .sobremi .contenido-seccion{
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .sobremi .contenido-seccion > p{
-        font-size: 16px;
-        line-height: 26px;
-        padding: 0 10px;
+        font-size: 15px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin-bottom: 30px;
     }
     .sobremi .fila{
-        display: block;
-        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
     }
     .sobremi .fila .col{
         width: 100%;
+        max-width: 100%;
     }
     .sobremi .fila .col > div,
     .sobremi .fila .col > ul{
-        padding: 20px;
+        padding: 18px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .sobremi .fila .col h3{
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 12px;
+        margin-bottom: 18px;
+        line-height: 1.6;
+    }
+    .sobremi .fila .col ul{
+        padding: 18px;
     }
     .sobremi .fila .col ul li{
-        margin: 12px 0;
-        font-size: 14px;
+        margin: 10px 0;
+        font-size: 13px;
+        line-height: 1.6;
     }
     .sobremi .fila .col ul li strong{
-        width: 110px;
-        font-size: 9px;
+        width: 100%;
+        font-size: 8px;
         display: block;
         margin-bottom: 5px;
     }
     .sobremi .fila .col .contenedor-intereses{
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
         justify-content: center;
+        width: 100%;
+        max-width: 100%;
     }
     .sobremi .fila .col .contenedor-intereses .interes{
-        width: 85px;
-        height: 85px;
+        width: 100%;
+        aspect-ratio: 1;
+        max-width: 90px;
+        height: auto;
+        margin: 0 auto;
     }
     .sobremi .fila .col .contenedor-intereses .interes i{
-        font-size: 24px;
+        font-size: 20px;
     }
     .sobremi .fila .col .contenedor-intereses .interes span{
-        font-size: 7px;
+        font-size: 6px;
+        padding: 0 2px;
     }
     .sobremi button{
-        padding: 12px 25px;
-        font-size: 10px;
-        margin: 30px auto 15px;
+        padding: 10px 20px;
+        font-size: 9px;
+        margin: 25px auto 15px;
+        letter-spacing: 1px;
     }
 
     /* Sección skills */
     .skills{
-        padding: 60px 15px;
+        padding: 50px 10px;
+    }
+    .skills .contenido-seccion{
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .skills .fila{
-        display: block;
-        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
     }
     .skills .fila .col{
         width: 100%;
+        max-width: 100%;
     }
     .skills .fila .col h3{
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 12px;
+        margin-bottom: 18px;
+        line-height: 1.6;
     }
     .skills .skill{
         padding: 15px;
         margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .skills .skill > span{
-        font-size: 14px;
+        font-size: 13px;
         margin-bottom: 10px;
     }
     .skills .fila .col .barra-skill{
         width: 100%;
+        max-width: 100%;
     }
     .skills .skill .barra-skill span{
-        font-size: 9px;
-        height: 24px;
-        width: 45px;
-        line-height: 24px;
-        top: -30px;
+        font-size: 8px;
+        height: 22px;
+        width: 42px;
+        line-height: 22px;
+        top: -28px;
     }
 
     /* Sección curriculum */
     .curriculum{
-        padding: 60px 15px;
+        padding: 50px 10px;
+    }
+    .curriculum .contenido-seccion{
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .curriculum .fila{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .curriculum .fila .col{
         width: 100%;
+        max-width: 100%;
         padding: 0;
     }
     .curriculum .fila .col h3{
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 12px;
+        margin-bottom: 18px;
+        line-height: 1.6;
     }
     .curriculum .fila .izquierda{
         border-right: none;
@@ -1543,24 +1627,29 @@ footer .arriba:hover{
         margin-left: 0;
     }
     .curriculum .fila .item{
-        padding: 20px;
+        padding: 18px;
         margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .curriculum .fila .item h4{
-        font-size: 12px;
-        line-height: 1.5;
+        font-size: 11px;
+        line-height: 1.6;
+        margin-bottom: 10px;
     }
     .curriculum .fila .item .casa{
-        font-size: 13px;
-        margin-bottom: 6px;
+        font-size: 12px;
+        margin-bottom: 8px;
+        line-height: 1.4;
     }
     .curriculum .fila .item .fecha{
-        font-size: 9px;
-        padding: 5px 12px;
+        font-size: 8px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
     }
     .curriculum .fila .item p{
-        font-size: 13px;
-        line-height: 22px;
+        font-size: 12px;
+        line-height: 20px;
     }
     .curriculum .fila .izq{
         border-right: none;
@@ -1577,64 +1666,89 @@ footer .arriba:hover{
 
     /* Sección portfolio */
     .portfolio{
-        padding: 60px 15px;
+        padding: 50px 10px;
+    }
+    .portfolio .contenido-seccion{
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .portfolio .galeria{
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         gap: 15px;
     }
     .portfolio .galeria .proyecto{
+        width: 100%;
         max-width: 100%;
-        height: 250px;
+        height: 240px;
         margin-bottom: 15px;
+        box-sizing: border-box;
     }
     .portfolio .galeria .proyecto-principal{
-        height: 300px;
+        height: 280px;
     }
     .portfolio .galeria .proyecto img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .portfolio .galeria .proyecto .overlay{
-        padding: 20px;
-        font-size: 14px;
+        padding: 15px;
+        font-size: 13px;
     }
     .portfolio .galeria .proyecto .overlay h3{
-        font-size: 12px;
-        line-height: 1.4;
-        margin-bottom: 10px;
-    }
-    .portfolio .galeria .proyecto .overlay p{
         font-size: 11px;
         line-height: 1.5;
+        margin-bottom: 8px;
+    }
+    .portfolio .galeria .proyecto .overlay p{
+        font-size: 10px;
+        line-height: 1.6;
+    }
+    .portfolio .galeria .proyecto-principal .overlay{
+        padding: 18px;
     }
     .portfolio .galeria .proyecto-principal .overlay h3{
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 1.6;
     }
     .portfolio .galeria .proyecto-principal .overlay p{
-        font-size: 12px;
+        font-size: 11px;
     }
 
     /* Sección contacto */
     .contacto{
-        padding: 60px 15px;
+        padding: 50px 10px;
+    }
+    .contacto .contenido-seccion{
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .contacto .fila{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .contacto .fila .col{
         width: 100%;
-        padding: 20px;
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
     }
     .contacto .col input, .contacto .col textarea{
         padding: 12px 15px;
         font-size: 14px;
         margin-bottom: 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     .contacto button{
-        padding: 12px 28px;
-        font-size: 10px;
+        padding: 10px 24px;
+        font-size: 9px;
         margin: 15px auto;
+        letter-spacing: 1px;
     }
 
     /* Footer */
@@ -1697,38 +1811,116 @@ footer .arriba:hover{
 
 /* Móviles muy pequeños */
 @media screen and (max-width:480px){
+    .contenedor-header header{
+        padding: 8px 10px;
+    }
     .contenedor-header header .logo a{
-        font-size: 10px;
+        font-size: 9px;
+    }
+
+    .inicio{
+        padding: 10px 5px;
     }
     .inicio .contenido-banner{
-        margin: 10px;
+        margin: 5px;
+        padding: 20px 10px;
+        width: calc(100% - 10px);
     }
     .inicio .contenido-banner h1{
-        font-size: 24px;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+    }
+    .inicio .contenido-banner h2{
+        font-size: 10px;
     }
     .inicio .contenido-banner img{
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
     }
-    .sobremi h2, .skills h2, .curriculum h2, .portfolio h2, .contacto h2{
+    .inicio .contenido-banner .redes a{
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
         font-size: 16px;
-        letter-spacing: 1px;
+        margin: 12px 4px 5px;
+    }
+
+    .sobremi, .skills, .curriculum, .portfolio, .contacto{
+        padding: 40px 8px;
+    }
+
+    .sobremi h2, .skills h2, .curriculum h2, .portfolio h2, .contacto h2{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        padding: 10px 5px 20px;
+    }
+    .sobremi h2::before, .skills h2::before, .curriculum h2::before, .portfolio h2::before, .contacto h2::before,
+    .sobremi h2::after, .skills h2::after, .curriculum h2::after, .portfolio h2::after, .contacto h2::after{
+        font-size: 12px;
+    }
+
+    .sobremi .contenido-seccion > p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .sobremi .fila .col > div,
+    .sobremi .fila .col > ul{
+        padding: 15px;
+    }
+
+    .sobremi .fila .col .contenedor-intereses{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
     }
     .sobremi .fila .col .contenedor-intereses .interes{
-        width: 75px;
-        height: 75px;
+        max-width: 80px;
     }
     .sobremi .fila .col .contenedor-intereses .interes i{
-        font-size: 20px;
+        font-size: 18px;
     }
     .sobremi .fila .col .contenedor-intereses .interes span{
-        font-size: 6px;
+        font-size: 5px;
     }
+
+    .sobremi button{
+        padding: 9px 18px;
+        font-size: 8px;
+    }
+
+    .skills .skill,
+    .curriculum .fila .item{
+        padding: 14px;
+    }
+
     .portfolio .galeria .proyecto{
-        height: 220px;
+        height: 200px;
     }
     .portfolio .galeria .proyecto-principal{
-        height: 250px;
+        height: 240px;
+    }
+
+    .portfolio .galeria .proyecto .overlay{
+        padding: 12px;
+    }
+    .portfolio .galeria .proyecto .overlay h3{
+        font-size: 10px;
+    }
+    .portfolio .galeria .proyecto .overlay p{
+        font-size: 9px;
+    }
+
+    .contacto .col input, .contacto .col textarea{
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    footer .redes a,
+    footer .arriba{
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 16px;
     }
 }
 
