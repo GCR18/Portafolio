@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Gabriel Condori - Ingeniero de Sistemas | Portfolio</title>
+    <meta name="description" content="Portfolio de Gabriel Condori, Ingeniero de Sistemas especializado en Angular, PHP, PXP y desarrollo web. Experiencia en soporte técnico en Boliviana de Aviación (BoA).">
+    <meta name="keywords" content="Gabriel Condori, Ingeniero de Sistemas, Desarrollador Web, Angular, PHP, PXP, MySQL, Python, Portfolio, Bolivia">
+    <meta name="author" content="Gabriel Condori">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gabriel Condori - Ingeniero de Sistemas | Portfolio">
+    <meta property="og:description" content="Portfolio de Gabriel Condori, Ingeniero de Sistemas especializado en Angular, PHP, PXP y desarrollo web.">
+    <meta property="og:image" content="Imagenes/KARMA.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Gabriel Condori - Ingeniero de Sistemas | Portfolio">
+    <meta property="twitter:description" content="Portfolio de Gabriel Condori, Ingeniero de Sistemas especializado en Angular, PHP, PXP y desarrollo web.">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -18,7 +35,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">YO</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
@@ -35,7 +52,7 @@
 <section id="inicio" class="inicio">
     <div class="contenido-banner">
         <div class="contenedor-img">
-            <img src="Imagenes/KARMA.jpg" alt="">
+            <img src="Imagenes/KARMA.jpg" alt="Gabriel Condori - Ingeniero de Sistemas">
         </div>
         <h1>Gabriel CR</h1>
         <h2>Ingeniero de Sistemas - Estudiante</h2>
@@ -75,7 +92,7 @@
                         </li>
                         <li>
                             <strong>Email</strong>
-                            gabriel.condori@uab.edu.com
+                            gabriel.condori@uab.edu.bo
                         </li>
                         <li>
                             <strong>Dirección</strong>
@@ -102,8 +119,16 @@
                             <span>VIAJAR</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-bed"></i>
-                            <span>DORMIR</span>
+                            <i class="fa-solid fa-box-archive"></i>
+                            <span>COLECCIONISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>DISEÑAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTES</span>
                         </div>
                     </div>
                 </div>
@@ -125,22 +150,6 @@
                 <div class="col">
                     <h3>Technical Skills</h3>
                     <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>45%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Html & Css</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>20%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
                         <span>Python</span>
                         <div class="barra-skill">
                             <div class="progreso">
@@ -157,10 +166,26 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Photoshop</span>
+                        <span>Angular</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>65%</span>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PXP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
@@ -245,10 +270,19 @@
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Soporte Tecnico</h4>
+                        <h4>Trabajo Dirigido - Sistema de Gestión BOA</h4>
                         <span class="casa">Boliviana de Aviación / BoA</span>
                         <span class="fecha">En Curso</span>
-                        <p>Durante mi pasantía en BOA, brindo soporte técnico en la instalación, mantenimiento y reparación de equipos informáticos. Tambien me encargo de la configuración de hardware y software, resolución de incidencias técnicas y optimización del rendimiento de los sistemas utilizados en la empresa.</p>
+                        <p>Desarrollo de sistema web para la gestión y control de herramientas del almacén aeronáutico de BOA. Implementación de arquitectura de 3 capas con trazabilidad inmutable mediante triggers PostgreSQL. Stack tecnológico: Angular, PHP, PXP Framework y PostgreSQL. Desarrollo ágil con Scrum (14 sprints).</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte Técnico</h4>
+                        <span class="casa">Boliviana de Aviación / BoA</span>
+                        <span class="fecha">2024</span>
+                        <p>Pasantía en BOA brindando soporte técnico en la instalación, mantenimiento y reparación de equipos informáticos. Configuración de hardware y software, resolución de incidencias técnicas y optimización del rendimiento de los sistemas utilizados en la empresa.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -260,88 +294,134 @@
 
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="Imagenes/F2.png" alt="">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto proyecto-principal">
+                <a href="#" onclick="abrirLightbox(); return false;">
+                    <img src="Imagenes/B1.png" alt="Sistema Web de Gestión de Herramientas - BOA">
                     <div class="overlay">
-                        <h3></h3>
-                        <p>1</p>
+                        <h3>Sistema de Gestión de Herramientas - BOA</h3>
+                        <p>Sistema Web de Gestión y Control de Herramientas para el Almacén Aeronáutico de Boliviana de Aviación. Arquitectura de 3 capas con trazabilidad inmutable mediante triggers PostgreSQL. Stack: Angular, PHP, PXP Framework, PostgreSQL.</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="Imagenes/IM1.png" alt="">
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="#" onclick="abrirLightboxProyecto(1); return false;">
+                    <img src="Imagenes/Proyecto1.png" alt="Diseño de página web para tienda online de productos">
                     <div class="overlay">
-                        <h3></h3>
-                        <p>2</p>
+                        <h3>Tienda Online</h3>
+                        <p>Diseño y desarrollo de plataforma e-commerce con carrito de compras, gestión de productos y pasarela de pagos</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="Imagenes/F1.jpg" alt="">
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="#" onclick="abrirLightboxProyecto(2); return false;">
+                    <img src="Imagenes/Config.jpeg" alt="Soporte técnico y configuración de equipos">
                     <div class="overlay">
-                        <h3></h3>
-                        <p>3</p>
+                        <h3>Soporte Técnico - BOA</h3>
+                        <p>Instalación, mantenimiento y configuración de equipos informáticos. Resolución de incidencias técnicas y optimización de sistemas</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="Imagenes/F4.jpg" alt="">
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="#" onclick="abrirLightboxProyecto(3); return false;">
+                    <img src="Imagenes/Proyecto2.png" alt="Diseño de página web para menú de hamburguesas">
                     <div class="overlay">
-                        <h3></h3>
-                        <p>4</p>
+                        <h3>Restaurante Web</h3>
+                        <p>Sitio web responsive para restaurante con menú interactivo, sistema de reservas y catálogo de productos</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="Imagenes/F3.jpg" alt="">
-                    <div class="overlay">
-                        <h3></h3>
-                        <p>5</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="Imagenes/F5.jpg" alt="">
-                    <div class="overlay">
-                        <h3></h3>
-                        <p>6</p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTAME</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTAME</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form action="https://formsubmit.co/gabriel.condori@uab.edu.bo" method="POST">
+                    <input type="text" name="name" placeholder="Tú Nombre" required>
+                    <input type="tel" name="phone" placeholder="Número telefónico" required>
+                    <input type="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" name="subject" placeholder="Tema">
+                    <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
-                </div>
-                </div>
+                </form>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- footer -->
     <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-discord"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://discord.com/users/gabo" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-condori-rondo-9442502b6" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/GCR18" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+
+    <!-- Lightbox para galería BOA -->
+    <div id="lightbox-boa" class="lightbox">
+        <span class="lightbox-close" onclick="cerrarLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <img id="lightbox-img" src="" alt="Proyecto BOA">
+            <button class="lightbox-next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+        <div class="lightbox-caption"></div>
+        <div class="lightbox-thumbnails" id="thumbnails-boa">
+            <img src="Imagenes/B1.png" alt="Vista principal del sistema" class="thumb active" data-index="0" onclick="mostrarImagen(0)">
+            <img src="Imagenes/B2.png" alt="Módulo de gestión" class="thumb" data-index="1" onclick="mostrarImagen(1)">
+            <img src="Imagenes/B3.png" alt="Panel de reportes" class="thumb" data-index="2" onclick="mostrarImagen(2)">
+        </div>
+    </div>
+
+    <!-- Lightbox para Proyecto 1 - Tienda Online -->
+    <div id="lightbox-proyecto-1" class="lightbox">
+        <span class="lightbox-close" onclick="cerrarLightboxProyecto(1)">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" onclick="cambiarImagenProyecto(1, -1)">&#10094;</button>
+            <img id="lightbox-img-1" src="" alt="Proyecto Tienda Online">
+            <button class="lightbox-next" onclick="cambiarImagenProyecto(1, 1)">&#10095;</button>
+        </div>
+        <div class="lightbox-caption" id="caption-1"></div>
+        <div class="lightbox-thumbnails" id="thumbnails-1"></div>
+    </div>
+
+    <!-- Lightbox para Proyecto 2 - Soporte Técnico -->
+    <div id="lightbox-proyecto-2" class="lightbox">
+        <span class="lightbox-close" onclick="cerrarLightboxProyecto(2)">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" onclick="cambiarImagenProyecto(2, -1)">&#10094;</button>
+            <img id="lightbox-img-2" src="" alt="Proyecto Soporte Técnico">
+            <button class="lightbox-next" onclick="cambiarImagenProyecto(2, 1)">&#10095;</button>
+        </div>
+        <div class="lightbox-caption" id="caption-2"></div>
+        <div class="lightbox-thumbnails" id="thumbnails-2"></div>
+    </div>
+
+    <!-- Lightbox para Proyecto 3 - Restaurante Web -->
+    <div id="lightbox-proyecto-3" class="lightbox">
+        <span class="lightbox-close" onclick="cerrarLightboxProyecto(3)">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" onclick="cambiarImagenProyecto(3, -1)">&#10094;</button>
+            <img id="lightbox-img-3" src="" alt="Proyecto Restaurante Web">
+            <button class="lightbox-next" onclick="cambiarImagenProyecto(3, 1)">&#10095;</button>
+        </div>
+        <div class="lightbox-caption" id="caption-3"></div>
+        <div class="lightbox-thumbnails" id="thumbnails-3"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
